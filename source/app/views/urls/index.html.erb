@@ -1,0 +1,14 @@
+<h1>List of URLs</h1>
+
+<table>
+  <tr>
+    <th>Short Form</th>
+    <th>Long Form</th>
+  </tr>
+  <% @all_urls.each do |url| %>
+    <tr>
+      <td><%= url.short_form %></td>
+      <td><%= url.long_form %></td>
+    </tr>
+  <% end %>
+</table>

@@ -1,0 +1,7 @@
+<h1>New Url</h1>
+
+<%= form_for @url_to_fill_out do |f| %>
+  <p><%= f.label "Enter the URL to shorten" %></p>
+  <p><%= f.text_field :long_form %></p>
+  <p><%= f.submit "Shorten it!" %></p>
+<% end %>

@@ -1,0 +1,7 @@
+<h1>Edit URL page</h1>
+
+<%= form_for @url_to_edit do |f| %>
+  <p><%= f.label "URL to shorten" %></p>
+  <p><%= f.text_field :long_form %></p>
+  <p><%= f.submit "Save changes" %></p>
+<% end %>
